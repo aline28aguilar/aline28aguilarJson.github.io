@@ -5,7 +5,6 @@ require_once __DIR__ . "/../libservidorphp/devuelveJson.php";
 
 $json = recibeJson();
 $saludo = $json->saludo;
-$nombre = "Aline Lizeth Aguilar Alcantara";
+$nombre = $json->nombre;
 $resultado = "{$saludo} {$nombre}.";
 devuelveJson($resultado);
-
